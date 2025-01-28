@@ -13,12 +13,8 @@
     ],
     "workspaceFolder": "/workspace",
     "mounts": [
-        "source=${localWorkspaceFolder},target=/workspace,type=bind",
-        "source=/run/host-services/ssh-auth.sock,target=/ssh-auth.sock,type=bind"
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
     ],
-    "remoteEnv": {
-        "SSH_AUTH_SOCK": "/ssh-auth.sock"
-    },
     "customizations": {
         "vscode": {
             "extensions": [
