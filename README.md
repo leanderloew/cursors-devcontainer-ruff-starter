@@ -56,6 +56,15 @@ ssh-add ~/.ssh/id_rsa # or the key you want to use
 - Click on the top right corner at the "play file", and click Python Debugger: Debug Python File
 - Remember to use the "Debug Console" to manipulate variables and such
 
+## Running from a remote machine 
+- Open Vs-Code/Cursors
+- cmd + shift + p => Remote-SSH: Connect to Host...
+- Enter the host
+- Using the Terminal, clone the Repo at the host (and add relevant secrets files)
+- Open the folder in the container
+- Everything should work the same out of the box (make sure the SSH-Agent is running on the server) it will be automatically forwarded if the Recommended local packages are installed.
+
+
 ## Questions:
 - Why micromamba and not uv?
     - In a scientific context you often need to install packages with binary requirements that are published through conda. Micromamba is (mostly) conda compliant and almost as fast as uv. If uv would ever support conda packages, I would switch.
