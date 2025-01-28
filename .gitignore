@@ -7,7 +7,6 @@ secrets/
 
 # Large data files
 *.csv
-!specs/*.csv  # Exclude specs directory CSVs since we want those with LFS
 *.parquet
 *.feather
 *.pickle

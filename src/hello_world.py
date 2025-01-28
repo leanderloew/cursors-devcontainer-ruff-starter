@@ -2,7 +2,6 @@ from dependencies import HelloWorld
 
 
 def hello_world() -> HelloWorld:
-    a = 1
     return HelloWorld.HELLO_WORLD
 
 
