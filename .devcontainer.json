@@ -12,6 +12,7 @@
         "--platform=linux/amd64"
     ],
     "workspaceFolder": "/workspace",
+    "initializeCommand": "ls",
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind"
     ],
@@ -25,7 +26,9 @@
                 "ms-azuretools.vscode-docker",
                 "ms-toolsai.jupyter",
                 "ms-vscode-remote.remote-containers",
-                "redhat.vscode-yaml"
+                "redhat.vscode-yaml",
+                "eamodio.gitlens",
+                "bierner.markdown-mermaid"
             ],
             "settings": {
                 "python.defaultInterpreterPath": "/usr/local/bin/python",
@@ -66,7 +69,10 @@
                     "reportPrivateImportUsage": "none",
                     "reportIncompatibleVariableOverride": "none",
                     "reportMissingTypeStubs": "none",
-                    "reportMissingTypeArgument": "warning"
+                    "reportMissingTypeArgument": "warning",
+                    "reportUntypedFunctionDecorator": "none",
+                    "reportPrivateUsage": "none",
+                    "reportIncompatibleMethodOverride": "none"
                 }
             }
         }

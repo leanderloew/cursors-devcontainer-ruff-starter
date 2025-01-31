@@ -81,6 +81,7 @@ ignore = [
     "TCH001",  # Move application import into a type-checking block
     "TCH002",  # Move third-party import into a type-checking block
     "TCH003",  # Move standard library import into a type-checking block
+    "E731",    # Do not assign a lambda expression, use a def
 ]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
